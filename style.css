@@ -1,5 +1,9 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
+.d-none-desktop {
+  display: none;
+}
+
 /* Reset básico */
 * {
   margin: 0;
@@ -27,16 +31,18 @@ body {
 }
 
 .navbar {
-  background: #fccc2e;
-  color: #000;
+  background: #000;
+  color: #FFF;
   padding: 1em 0;
   font-weight: bold;
 }
 
 .navbar .nav-links {
+  width: 600px;
   list-style: none;
   display: flex;
   justify-content: space-around;
+  margin: auto;
 }
 
 .navbar .nav-links li {
@@ -44,7 +50,7 @@ body {
 }
 
 .navbar .nav-links a {
-  color: #000;
+  color: #FFF;
   text-decoration: none;
 }
 
@@ -106,7 +112,6 @@ body {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  /* Sobreposição de cor preta com 50% de transparência */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +144,6 @@ section h2 {
 
 /* Sobre Nós */
 .sobre {
-  background-color: #202020;
   padding: 4em 0;
   text-align: center;
 }
@@ -147,7 +151,7 @@ section h2 {
 .sobre h2 {
   font-size: 2.5em;
   margin-bottom: 1em;
-  color: #fff;
+  /* color: #fff; */
   position: relative;
 }
 
@@ -169,13 +173,12 @@ section h2 {
 .sobre-text p {
   margin-bottom: 1em;
   line-height: 1.6;
-  color: #fff;
   font-size: 1.1em;
 }
 
 .sobre-image {
   flex: 1;
-  min-width: 300px;
+  max-height: 300px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -199,13 +202,11 @@ section h2 {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  /* Cor preta com 50% de transparência */
   border-radius: 10px;
 }
 
 .atendimento {
   background-color: #fccc2e;
-  /* Cor de fundo azul vibrante */
   color: #000;
   padding: 4em 0;
   text-align: center;
@@ -226,11 +227,8 @@ section h2 {
 .icon {
   font-size: 4em;
   border: 2px solid #000;
-  /* Borda branca ao redor do ícone */
   border-radius: 400px;
-  /* Borda arredondada */
   padding: 20px 40px;
-  /* Espaçamento interno */
 }
 
 .icon i {
@@ -254,27 +252,7 @@ section h2 {
 .servicos {
   padding: 4em 0;
   background-color: #f9f9f9;
-  text-align: center;
-}
-
-.servicos h2 {
-  font-size: 2.5em;
-  margin-bottom: 1em;
-  color: #333;
-}
-
-.servicos-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2em;
-}
-
-/* Nossos Serviços */
-.servicos {
-  padding: 4em 0;
-  background-color: #f9f9f9;
-  text-align: center;
+  text-align: left;
 }
 
 .servicos h2 {
@@ -312,22 +290,19 @@ section h2 {
 .servico-item img {
   width: 100%;
   height: auto;
-  /* Ajusta automaticamente a altura */
   aspect-ratio: 1;
-  /* Mantém a proporção 1:1 para garantir que a imagem seja quadrada */
   object-fit: cover;
-  /* Garante que a imagem cubra todo o contêiner sem distorção */
   border-radius: 10px 10px 0 0;
 }
 
 .servico-item h3 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 1em 0 0.5em;
   color: #000;
 }
 
 .servico-item p {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #666;
   margin-bottom: 1em;
   padding: 0 1em;
@@ -335,6 +310,7 @@ section h2 {
 
 /* Galeria de Fotos */
 .gallery {
+  width: 100%;
   padding: 2em 0;
   text-align: center;
 }
@@ -358,7 +334,6 @@ section h2 {
   margin-bottom: 1em;
   width: 100%;
   padding-top: 100%;
-  /* Define altura igual à largura para criar quadrado */
   position: relative;
   overflow: hidden;
 }
@@ -370,7 +345,6 @@ section h2 {
   width: 90%;
   height: 90%;
   object-fit: cover;
-  /* Mantém a proporção e corta a imagem para preencher o quadrado */
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
@@ -401,8 +375,8 @@ section h2 {
 .rodape-mapa iframe {
   border: 0;
   border-radius: 10px;
-  max-width: 400px;
-  width: 100%;
+  max-width: 600px;
+  width: 600px;
   height: 200px;
 }
 
@@ -413,7 +387,7 @@ section h2 {
 
 .social-icon {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 3.5em;
   transition: color 0.3s ease;
 }
 
@@ -424,6 +398,14 @@ section h2 {
 /* Responsividade */
 @media (max-width: 768px) {
   .clebson {
+    display: none;
+  }
+
+  .d-none-desktop {
+    display: block;
+  }
+
+  .d-none-mobile {
     display: none;
   }
 
@@ -494,6 +476,22 @@ section h2 {
   .servico {
     max-width: 80%;
     margin-bottom: 2em;
+  }
+
+  .gallery-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
   }
 
   .rodape-content {

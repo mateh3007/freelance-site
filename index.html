@@ -9,8 +9,7 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
+  <nav class="navbar d-none-mobile">
     <div class="menu-mobile">
       <a href="#" class="brand-logo">CLEBSON CHAVEIRO</a>
       <button class="menu-toggle" id="menu-toggle">
@@ -21,8 +20,6 @@
     </div>
     <div class="container">
       <ul class="nav-links" id="nav-links">
-        <li><a href="#" class="clebson">CLEBSON CHAVEIRO</a></li>
-        <li><a href="#home">Home</a></li>
         <li><a href="#sobre">Sobre Nós</a></li>
         <li><a href="#servicos">Nossos Serviços</a></li>
         <li><a href="#gallery">Galeria de fotos</a></li>
@@ -31,17 +28,16 @@
     </div>
   </nav>
 
-  <!-- Banner -->
-  <section class="banner" id="home">
-    <div class="overlay">
-      <div class="container">
-        <h1>CLEBSON CHAVEIRO</h1>
-        <p>Oferecemos serviços de alta qualidade 24 horas por dia.</p>
-      </div>
-    </div>
-  </section>
+  <picture class="d-none-mobile">
+    <source srcset="./img/banner-hero-2.jpg">
+    <img src="./img/banner-hero-2.jpg" alt="Banner" style="width: 100%; height: auto;">
+  </picture>
 
-  <!-- Sobre Nós -->
+  <picture class="d-none-desktop">
+    <source srcset="./img/banner-hero-2-mobile.jpg">
+    <img src="./img/banner-hero-2-mobile.jpg" alt="Banner" style="width: 100%; height: auto;">
+  </picture>
+
   <section class="sobre" id="sobre">
     <div class="container">
       <div class="sobre-content">
@@ -62,89 +58,80 @@
     </div>
   </section>
 
-  <!-- Nossos Serviços -->
   <section class="servicos" id="servicos">
     <div class="container">
       <h2>Nossos Serviços</h2>
       <div class="servicos-content">
         <div class="servico">
           <div class="servico-item">
-            <img src="img/img10.jpeg" alt="Troca de Fechaduras Residenciais">
-            <h3>Troca de Fechaduras Residenciais</h3>
-            <p>Substituímos e instalamos fechaduras de alta segurança para proteger sua casa com eficiência.</p>
+            <img src="img/service-1.png" alt="Chaves Codificadas">
+            <h3>Chaves Codificadas</h3>
+            <p>Serviço de Cópia de Chaves Codificadas - Precisão e Tecnologia para Sua Tranquilidade</p>
           </div>
         </div>
         <div class="servico">
           <div class="servico-item">
-            <img src="img/img7.jpeg" alt="Duplicação de Chaves Automotivas">
-            <h3>Duplicação de Chaves Automotivas</h3>
-            <p>Duplicamos chaves de todos os modelos de veículos, incluindo chaves codificadas e com chip.</p>
+            <img src="img/service-2.png" alt="Chaves Residenciais">
+            <h3>Chaves Residenciais</h3>
+            <p>Serviço de Cópia de Chaves Residenciais - Rapidez e Confiança para Seu Lar</p>
           </div>
         </div>
         <div class="servico">
           <div class="servico-item">
-            <img src="img/img9.jpeg" alt="Instalação de Sistemas de Segurança Comercial">
-            <h3>Serviço de Chaveiro de Emergência</h3>
-            <p>Assistência rápida 24/7 para perda de chaves, fechaduras quebradas e portas trancadas.</p>
+            <img src="img/service-3.png" alt="Atendimento 24 Horas">
+            <h3>Atendimento 24 Horas</h3>
+            <p>Serviço de Cópia de Chaves Residenciais e Codificadas - Disponibilidade Total, Dia e Noite</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Atendimento 24h -->
-  <section class="atendimento" id="atendimento">
-    <div class="container">
-      <h2>Atendimento 24h</h2>
-      <div class="atendimento-content">
-        <div class="icon">
-          <i class="fas fa-phone"></i>
-        </div>
-        <div class="info">
-          <h3>Entre em Contato</h3>
-          <p>Nosso suporte está disponível 24 horas por dia, 7 dias por semana.</p>
-          <p>Telefone: +55 (84) 98843-4447</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <picture class="d-none-mobile">
+    <source srcset="./img/banner-24h.jpg">
+    <img src="./img/banner-24h.jpg" alt="Banner" style="width: 100%; height: auto;">
+  </picture>
 
-  <!-- Galeria de Fotos -->
+  <picture class="d-none-desktop">
+    <source srcset="./img/banner-24h-mobile.jpg">
+    <img src="./img/banner-24h-mobile.jpg" alt="Banner" style="width: 100%; height: auto;">
+  </picture>
+
   <section class="gallery" id="gallery">
     <div class="container">
       <h2>Galeria de Fotos</h2>
       <div class="gallery-images">
         <div class="gallery-column">
           <div class="gallery-item">
-            <img src="img/img2.jpeg" alt="Foto 1">
+            <img src="img/galery-1.jpg" alt="Foto 1">
           </div>
           <div class="gallery-item">
-            <img src="img/img3.jpeg" alt="Foto 2">
+            <img src="img/galery-2.jpg" alt="Foto 2">
           </div>
           <div class="gallery-item">
-            <img src="img/img4.jpeg" alt="Foto 3">
-          </div>
-        </div>
-        <div class="gallery-column">
-          <div class="gallery-item">
-            <img src="img/img5.jpeg" alt="Foto 4">
-          </div>
-          <div class="gallery-item">
-            <img src="img/img8.jpeg" alt="Foto 5">
-          </div>
-          <div class="gallery-item">
-            <img src="img/img6.jpeg" alt="Foto 6">
+            <img src="img/galery-3.jpg" alt="Foto 3">
           </div>
         </div>
         <div class="gallery-column">
           <div class="gallery-item">
-            <img src="img/img11.jpeg" alt="Foto 7">
+            <img src="img/galery-4.jpg" alt="Foto 4">
           </div>
           <div class="gallery-item">
-            <img src="img/img12.jpeg" alt="Foto 8">
+            <img src="img/galery-5.jpg" alt="Foto 5">
           </div>
           <div class="gallery-item">
-            <img src="img/img13.jpeg" alt="Foto 9">
+            <img src="img/galery-6.jpg" alt="Foto 6">
+          </div>
+        </div>
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="img/galery-7.jpg" alt="Foto 7">
+          </div>
+          <div class="gallery-item">
+            <img src="img/galery-8.jpg" alt="Foto 8">
+          </div>
+          <div class="gallery-item">
+            <img src="img/galery-10.jpg" alt="Foto 9">
           </div>
         </div>
       </div>
@@ -157,18 +144,18 @@
       <div class="rodape-content">
         <div class="rodape-logo">
           <h1>CLEBSON CHAVEIRO</h1>
+          <div class="rodape-redes-sociais">
+            <a href="https://www.facebook.com/dulcelves" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/clebsonchaveiro/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=5584988434447&text=Ol%C3%A1%21+Descobri+o+n%C3%BAmero+de+voc%C3%AAs+no+site+da+telepesquisa.+Gostaria+de+uma+informa%C3%A7%C3%A3o.&type=phone_number&app_absent=0" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
           <p>&copy; 2024 Empresa. Todos os direitos reservados.</p>
         </div>
         <div class="rodape-mapa">
-          <iframe
+          <iframe title="Endereço Clebson Chaveiro"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.2403873169956!2d-35.214125824105366!3d-5.8216860574037845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2fff4dc5f36fb%3A0xf0a2e5184513a229!2sClebson%20Chaveiro!5e0!3m2!1spt-BR!2sbr!4v1715724268814!5m2!1spt-BR!2sbr"
             width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="rodape-redes-sociais">
-          <a href="https://www.facebook.com/dulcelves" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://instagram.com/clebsonchaveiro/" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="https://api.whatsapp.com/send/?phone=5584988434447&text=Ol%C3%A1%21+Descobri+o+n%C3%BAmero+de+voc%C3%AAs+no+site+da+telepesquisa.+Gostaria+de+uma+informa%C3%A7%C3%A3o.&type=phone_number&app_absent=0" class="social-icon"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </div>
